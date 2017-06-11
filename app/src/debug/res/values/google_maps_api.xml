@@ -1,0 +1,5 @@
+<resources>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAMAg4B56EmFtYcnczaY-Gz6XoFNwe5EJo</string>
+    <string name="google_url_directions" translatable="false">https://maps.googleapis.com/maps/api/directions/</string>
+    <string name="google_mode">walking</string>
+</resources>

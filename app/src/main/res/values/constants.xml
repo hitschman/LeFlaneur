@@ -1,0 +1,9 @@
+<resources>
+    <integer name="distance_between_points">20</integer>
+    <integer name="distance_for_recalculation">10</integer>
+    <integer name="distance_to_be_still_on_path">@integer/distance_between_points</integer>
+
+    <bool name="draw_marker_to_waypoint">false</bool>
+    <bool name="draw_circle_around_turn">false</bool>
+    <bool name="draw_circle_around_end">false</bool>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="vertical"
+    android:background="#4285F4"
+    >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:text="From:"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/fromTextView"
+            android:layout_column="0"
+            android:layout_row="0" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:padding="8dp"
+            android:text="Your Location"
+            android:id="@+id/startEditText"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_marginRight="40dp"
+            android:textSize="14sp"
+            android:minLines="1"
+            android:maxLines="1"
+            android:enabled="false"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+        <TextView
+            android:text="To:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toTextView"
+            android:layout_column="0"
+            android:layout_row="1"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:padding="8dp"
+            android:inputType="text"
+            android:text="Toni Areal"
+            android:id="@+id/destinationEditText"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_marginRight="40dp"
+            android:textSize="14sp" />
+    </GridLayout>
+
+</LinearLayout>

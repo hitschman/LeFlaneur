@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/infoLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAFA"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:contextClickable="true"
+        >
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:id="@+id/cancelButton"
+                android:layout_row="0"
+                android:layout_column="20"
+                android:onClick="closeIntroButton"
+                />
+
+            <TextView
+                android:text="Touch and Find"
+                android:textColor="#222222"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleView"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:textSize="30sp"
+                android:paddingTop="5dp"
+                />
+
+
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Die App bringt Sie ans Ziel, ohne dass Sie auf das Display schauen müssen. Die Richtungsänderungen werden Ihnen Taktil - vibrieren - übermittelt. Sie können Ihr Ziel mittels eines langen Touch auf der Karte bestimmen, oder über die Sucheingabe. Die Sucheingabe öffnet sich nach einem kurzem Touch auf der Karte. Ist das Ziel bestimmen, kann es bereits losgehen. \nDie folgenden Buttons zeigen alle möglichen Vibrationsmuster auf."
+                android:layout_height="wrap_content"
+                android:id="@+id/introView"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:textSize="18sp"
+                android:paddingTop="5dp"
+                android:textColor="#666666"
+                />
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:elevation="23dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/leflaneurleft"
+                android:id="@+id/leftButton"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:onClick="leftButton"
+                android:background="#FAFAFA"
+                android:layout_marginTop="55dp"
+                android:padding="5dp"
+                android:layout_marginRight="5dp" />
+
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/leflaneurstraight"
+                    android:id="@+id/straightButton"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:onClick="straightButton"
+                    android:background="#FAFAFA"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:layout_height="60dp"
+                    android:src="@drawable/leflaneurinfo"
+                    android:id="@+id/infoButton"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:rotation="0"
+                    android:onClick="infoButton"
+                    android:background="#FAFAFA"
+                    android:layout_width="60dp"
+                    android:padding="5dp"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/leflaneurright"
+                android:id="@+id/rightButton"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:onClick="rightButton"
+                android:background="#FAFAFA"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="55dp"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <Button
+            android:text="dont show this message again"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"
+            android:id="@+id/button2"
+            android:onClick="dontShowAgain"
+            />
+    </RelativeLayout>
+</FrameLayout>

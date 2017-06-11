@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mapButtons"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:gravity="center_vertical"
+    >
+
+
+    <ImageView
+        android:id="@+id/buttonSound"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:onClick="changeAudioState"
+        android:src="@drawable/leflaneursoundoff"
+        />
+
+    <!--
+    <ImageView
+        android:id="@+id/buttonSearch"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:onClick="changeSearchState"
+        android:src="@drawable/leflaneursearch"
+        android:layout_marginTop="10dp"
+        />
+    -->
+    <ImageView
+        android:id="@+id/buttonLocation"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:onClick="goToCurrentLocation"
+        android:src="@drawable/leflaneurlocation"
+        android:layout_marginTop="10dp"
+        />
+
+
+</LinearLayout>
